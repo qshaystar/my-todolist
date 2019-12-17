@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Todo List</title>
+
+  <link rel="stylesheet" href="css/jquery-ui.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/handlebars-v4.3.1.js"></script>
+  <script src="js/jquery-ui.min.js"></script>
+  <script src="js/action.js"></script>
+</head>
+<body>
+  
+
+<div id="panel">
+  <h1>Todo List</h1>
+  <hr>
+  <div id="todo-list">
+
+    <h5 class="hide-btn">Hide Completed</h5>
+  
+    <ul>
+      <li class='complete'>
+        <div class="checkbox"></div>
+        <div class="content">採買日常用品
+        </div>
+        <div class="actions">
+           <div class="delete">x</div>
+        </div>     
+      </li>
+      <li>
+        <div class="checkbox"></div>
+        <div class="content">整理行李
+        </div>
+        <div class="actions">
+           <div class="delete">x</div>
+        </div>
+      </li>
+      <li>
+        <div class="checkbox"></div>
+        <div class="content">倒垃圾
+        </div>
+        <div class="actions">
+           <div class="delete">x</div>
+        </div>
+      </li>
+
+      <li class='new'>
+        <div class="actions">
+          <div class="addtodo">+</div>
+        </div>
+        <div class="content" contenteditable="true" placeholder="Add Something..."></div>
+      </li>
+    </ul>
+  </div>
+  
+</div>
+
+<script id="todo-list-item-template" type="text/x-handlebars-template">
+  <li class="{{#if is_complete}}complete{{/if}}">
+    <div class="checkbox"></div>
+    <div class="content">{{content}}</div>
+    <div class="actions">
+      <div class="delete">x</div>
+    </div>
+  </li>
+</script>
+
+
+</body>
+</html>

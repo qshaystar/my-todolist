@@ -1,0 +1,144 @@
+body {
+  background-image: url(../image/san-francisco-free.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#panel {
+  margin: 0 auto;
+  width: 600px;
+  /*background-color: #534e79;*/
+   
+}
+
+h1{
+  padding-top: 20px;
+  text-align: center;
+  color: #fff;
+  font-weight: 300;
+  letter-spacing: 12px;
+}
+
+.hide-btn {
+  display: inline;
+  margin: 0;
+  margin-left: 5%;
+  padding: 0 5px;
+  border-radius: 4px;
+  font-size: 14px;
+  color: #c89717;;
+  cursor: pointer;
+  background-color: rgba(255,255,255,.7);          
+}
+
+
+hr {
+  width: 80%;
+  border-color: #fff;
+}
+
+#todo-list {
+  margin-top: 50px;
+}
+
+#todo-list ul {
+  margin: 0;
+  padding: 0 30px 30px 30px;
+  list-style-type: none;
+}
+
+#todo-list li {
+  display: flex;
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgba(255,255,255,.7);
+}
+
+#todo-list li:hover, .hide-btn:hover {
+  background-color: #fff;
+  box-shadow: 2px 2px 10px 2px rgba(20%,20%,40%,0.3);
+}
+
+#todo-list li.active {
+  background-color: #fff;
+  box-shadow: 2px 2px 10px 2px rgba(20%,20%,40%,0.3);
+}
+
+#todo-list .content {
+  flex: 1;
+}
+
+
+#todo-list .checkbox {
+  margin-right: 10px;
+  border-radius: 50%;
+  border: .5px solid #222;
+  width: 25px;
+  height:25px;
+  cursor: pointer;
+}
+
+#todo-list .checkbox:hover {
+  box-shadow: inset 2px 2px 2px rgba(20%,20%,40%,0.3);
+}
+
+#todo-list .delete {
+  border-radius: 5px;
+  width: 25px;
+  height:25px;
+  background-color: rgba(255,0,0,.7);
+  text-align: center;
+  color: #fff;
+}
+
+#todo-list .delete:hover {
+  box-shadow: 2px 2px 10px 2px rgba(20%,20%,40%,0.3);
+}
+
+#todo-list .new {
+  margin-top: 15px;
+  padding: 13px;
+  background-color: #fff;
+  box-shadow: 2px 2px 10px 2px rgba(20%,20%,40%,0.3);
+}
+
+#todo-list .addtodo {
+  margin-right: 15px;
+  border: .5px solid #222;
+  border-radius: 5px;
+  width: 25px;
+  height:25px;
+  text-align: center;
+}
+
+#todo-list .addtodo:hover {
+  box-shadow: 2px 2px 10px 2px rgba(20%,20%,40%,0.3);
+}
+
+
+
+
+#todo-list .actions > * {
+  cursor: pointer;
+}
+
+
+
+#todo-list .complete .checkbox {
+  background-color: #6FC90C;
+  border-color: #7e7e7e;
+}
+
+#todo-list .complete .content {
+  color: #7e7e7e;
+  text-decoration: line-through;
+}
+
+[contenteditable=true]:empty:before {
+  content: attr(placeholder);
+  display: block; /* For Firefox */
+  color: #bebebe;
+  font-style: italic;
+}
+
