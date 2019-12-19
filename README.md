@@ -1,6 +1,6 @@
 # Todo List
 
-## 作品介紹
+
 
 簡易版線上Todo List練習，也許不算華麗，但該有的基本功能皆有，使用方式非常直覺。
 
@@ -19,7 +19,7 @@
 * 隱藏完成項目 - 點選左上方"Hide Completed"，即可隱藏完成項目，也可再次顯示。
 
 
-### 作品展示 [DEMO](https://qshaystar.github.io/my-todolist/)
+### 網頁展示 [DEMO](https://qshaystar.github.io/my-todolist/)
 
 ----
 
